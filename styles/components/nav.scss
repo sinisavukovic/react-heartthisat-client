@@ -1,0 +1,18 @@
+.nav {
+  height: 50px;
+  background-color: $darkerGray;
+};
+
+
+.nav-text {
+  margin-left: 30px;
+  color: $white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 50px;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}

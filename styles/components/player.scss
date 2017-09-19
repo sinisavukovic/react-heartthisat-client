@@ -1,0 +1,141 @@
+$hideSliderInfo: "580px";
+
+.player {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background-color: $white;
+  border-top: 1px solid $lighterGray;
+  user-select: none;
+  z-index: 999;
+}
+
+.player-inner {
+	display: flex;
+	flex-direction: row;
+	padding: 8px 20px;
+}
+
+.player-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & + .player-section {
+    margin-left: 30px;
+  }
+}
+
+.player-section-song  {
+  width: 200px;
+  
+  @media (max-width: $hideSliderInfo) {
+    width: 100%;
+  }
+}
+
+.player-song {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.player-song-artwork {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  max-height: 30px;
+  background: no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.player-song-main {
+  flex: 1;
+  margin-left: 8px;
+  overflow: hidden;
+}
+
+.player-song-title {
+  color: $black;
+}
+
+.player-song-username {
+  color: $blue;
+}
+
+.player-song-title,
+.player-song-username {
+  display: block;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.player-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.player-button {
+  position: relative;
+  padding: 4px;
+  outline: 0;
+	margin-left: 20px;
+
+  &:hover {
+    cursor: pointer;
+
+    .player-button-icon {
+      color: $darkGray;
+    }
+  }
+
+  &:active {
+    .player-button-icon {
+      color: $darkGreen;
+    }
+  }
+}
+
+.player-time {
+  display: flex;
+  flex-direction: row;
+  color: $gray;
+  font-size: 11px;
+}
+
+.player-time-separator {
+  margin: 0 10px;
+}
+
+.player-button-volume {
+  position: relative;
+  width: 6px;
+  height: 22px;
+
+  .player-button-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.player-section-seek {
+  flex: 1;
+}
+
+.player-section-seek,
+.player-section-time {
+  @media (max-width: $hideSliderInfo) {
+    display: none;
+  }
+}

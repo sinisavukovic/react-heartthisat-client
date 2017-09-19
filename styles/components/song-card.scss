@@ -1,0 +1,60 @@
+
+.song-list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px 0 50px 0;
+}
+
+.song-card {
+  flex: 0 0 250px;
+  position: relative;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.song-card-button-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  margin-left: -21px;
+  margin-top: -21px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid $darkGray;
+}
+
+.song-card-info {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  color: $lightBlack;
+
+  a {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: $lightBlack;
+
+  }
+  
+  b, em {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $black;
+  }
+}

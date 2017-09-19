@@ -1,0 +1,84 @@
+.profile-song-list {
+	margin: 20px 0 70px 0;
+	background: $white;
+}
+
+.profile-song-item {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid $lighterGray;
+	border-left: 1px solid $lighterGray;
+	border-right: 1px solid $lighterGray;
+
+	&:last-child {
+		border-bottom: 1px solid $lighterGray;
+	}
+}
+
+.profile-song-item-img {
+	margin: 10px 20px 10px 10px;
+}
+
+.profile-song-button-icon {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  margin-left: -11px;
+  margin-top: -12px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  border: 1px solid $darkGray;
+}
+
+.profile-song-item-title {
+	display: block;
+	color:$black;
+	font-size: 14px;
+	font-weight: 300;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.profile-song-item-info {
+	margin: 10px 20px 0 0;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.profile-song-item-info-extra {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.profile-song-item-user {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.profile-song-item-user-img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-shrink: 0;
+}
+
+.profile-song-item-user-username {
+	color: $black;
+}
+

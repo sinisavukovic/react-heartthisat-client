@@ -1,0 +1,86 @@
+@import 'variables';
+@import 'mixins.scss';
+@import 'icons.scss';
+
+@import './components/normalize.scss';
+
+//components
+@import './components/nav.scss';
+@import './components/song-card.scss';
+@import './components/profile-card.scss';
+@import './components/profile-song-item.scss';
+@import './components/player.scss';
+@import './components/slider.scss';
+@import './components/loader.scss';
+
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.not-found {
+  background: $white;
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold
+}
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  margin-bottom: 0;
+  background: rgba(41, 75, 105, 0.1);
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+  color: #294b69;
+  border-radius: 2px;
+  border: 1px solid #6f9dc7;
+}
+
+.album-art {
+  background-color: $darkerGray;
+  position: relative;
+  overflow: hidden;
+
+  &--large {
+    width:250px;
+    min-width:250px;
+    height:250px;
+  }
+
+  &--small {
+    width: 60px;
+    min-width:60px;
+    height: 60px;
+  }
+
+  &.active:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, .6);
+  }
+}
+
+body {
+  font-family: Open Sans,"sans-serif";
+  font-size: 14px;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; 
+}

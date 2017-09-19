@@ -1,0 +1,45 @@
+.profile-card {
+	padding: 10px;
+	background: $white;
+	border: 1px solid $lighterGray;
+	margin: 20px 0;
+	display: flex;
+}
+
+.profile-card-avatar {
+	background-color: $darkerGray;
+	width: 120px;
+	height: 120px;
+	margin-right: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	min-width: 120px;
+	
+	@media (max-width: 400px) {
+		display: none;
+	}
+}
+
+.profile-card-stats {
+	display: flex;
+	margin-top: 20px;
+}
+
+.profile-card-stats-col {
+	text-align: center;
+	margin-right: 15px;
+}
+
+.profile-card-title,
+.profile-card-username {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.profile-card-location {
+	color: $mediumGray
+}
